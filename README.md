@@ -4,6 +4,16 @@ SeatSync is a clean-room, event-driven ticket reservation platform for high-dema
 
 The repository is intentionally production-oriented without pretending to be a production deployment. It includes correctness boundaries, failure handling, observability hooks, manual verification guidance, and load-test scenarios. Performance numbers belong in documentation only after they have been reproduced on a stated environment.
 
+## Interview learning guides
+
+Read these Word guides in order. They explain the checked-in implementation from first principles, with diagrams, a worked request journey, important code excerpts, failure cases, and interview practice.
+
+1. [Project Guide](output/docx/01_SeatSync_Project_Guide.docx) — the problem, architecture, technology choices, consistency rules, tradeoffs, and how to explain the project.
+2. [Code Journey Guide](output/docx/02_SeatSync_Code_Guide.docx) — follow a request through gateway, hold creation, checkout, recovery, and event projection, with source-linked explanations.
+3. [Code Reference](output/docx/03_SeatSync_Code_Reference.docx) — use as a lookup companion for every main Java source file, APIs, schemas, configuration, tests, scripts, and deeper interview questions.
+
+The two main guides are the reading path; the reference supports detailed lookup. Existing ADRs and operational documents remain useful project records. The guides distinguish current behavior, known limitations, proposed improvements, and verification evidence.
+
 ## Architecture
 
 ```mermaid
